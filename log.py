@@ -13,7 +13,7 @@ max_data_usage = 25 #流量上限，目前只有25和50
 info = []
 
 def show(data_usage, data_percent, money_left, suggest):
-    qtDialogFile = "success.ui"
+    qtDialogFile = PATH + "success.ui"
     Ui_DialogWindow, QtBaseClass2 = uic.loadUiType(qtDialogFile)
 
     class MyApp(QtGui.QDialog, Ui_DialogWindow):
